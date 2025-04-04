@@ -62,61 +62,42 @@ def generate_gt_image(xyi, h, w):
     return img/np.sum(img)   
   
 # ------------------------------------------
-snrs_mc = np.kron(snrs,np.ones(MONTE_CARLO_SAMPLES))
-datasets_inp = dict()
-datasets_ref = dict()
-
-MONTE_CARLO_SAMPLES = 10
-PSFW = 2
-RAYLEIGH = 3*PSFW
-
-WIDTH = 50
-HEIGTH = 50
-UPSCALE = 4
-snrs = np.logspace(0, 3, 37)
-
-distances = np.linspace(0,1,41)*RAYLEIGH
-xys = np.array([((25-d/2, 25),(25+d/2, 25)) for d in distances])
-
-snrs = list(snrs) + [-1]
-snrs_mc = np.kron(snrs,np.ones(MONTE_CARLO_SAMPLES))
-
-datasets_inp = dict()
-datasets_ref = dict()
-            # imgref = generate_gt_image(upscale_xyi(xyi), 200, 200)
-            # images_ref.append(imgref)
-
-for snr in snrs_mc:
-    key = f'snr_{int(round(snr)):d}_{counter}' if snr>0 else 'noiseless'
-    print(key, snr)
-    #background level offset is 1 for all standard SNRs
-    #but when we prepare noiseless data, background level is 0, SNR is set to 1 and no noise is applied.
-    _bckgstd = 1 if snr>0 else 0
-    _snr = snr if snr>0 else 1 
-    images_in = []
-    for xy in xys:  
-        xyi = np.vstack([xy[:,0], xy[:,1], np.ones(2)*_snr]).T
-        images_in.append(generate_image(xyi, 3, _bckgstd, PSFW, 50, 50))
-    datasets_inp[key] = np.array(images_in)    
+if __name__ == '__main__':
+    snrs_mc = np.kron(snrs,np.ones(MONTE_CARLO_SAMPLES))
+    datasets_inp = dict()
+    datasets_ref = dict()
     
-key = 'reference'
-images_ref = []
-lateral_offset = (UPSCALE-1)/2
-for xy in xys:
-    xyi = np.vstack([UPSCALE*xy[:,0]+lateral_offset, UPSCALE*xy[:,1]+lateral_offset, np.ones(2)*1]).T    
-    images_ref.append(generate_gt_image(xyi, 200, 200))
-
-datasets_ref[key] = np.array(images_ref)
-
-print("Writing inputs...")
-with h5py.File('input_res_for_cnn_psf2.h5', 'w') as h5f:
-    for key in datasets_inp.keys():
-        print(key)
-        h5f.create_dataset(key, data = datasets_inp[key].astype(np.float32), dtype=np.float32)
-
-print("Writing references...")
-with h5py.File('synth_res_reference_psf2.h5', 'w') as h5f:
-    for key in datasets_ref.keys():
-        print(key)
-        h5f.create_dataset(key, data = datasets_ref[key].astype(np.float32), dtype=np.float32)
-print("Done")
+    for snr in snrs_mc:
+        key = f'snr_{int(round(snr)):d}_{counter}' if snr>0 else 'noiseless'
+        print(key, snr)
+        #background level offset is 1 for all standard SNRs
+        #but when we prepare noiseless data, background level is 0, SNR is set to 1 and no noise is applied.
+        _bckgstd = 1 if snr>0 else 0
+        _snr = snr if snr>0 else 1 
+        images_in = []
+        for xy in xys:  
+            xyi = np.vstack([xy[:,0], xy[:,1], np.ones(2)*_snr]).T
+            images_in.append(generate_image(xyi, 3, _bckgstd, PSFW, 50, 50))
+        datasets_inp[key] = np.array(images_in)    
+        
+    key = 'reference'
+    images_ref = []
+    lateral_offset = (UPSCALE-1)/2
+    for xy in xys:
+        xyi = np.vstack([UPSCALE*xy[:,0]+lateral_offset, UPSCALE*xy[:,1]+lateral_offset, np.ones(2)*1]).T    
+        images_ref.append(generate_gt_image(xyi, 200, 200))
+    
+    datasets_ref[key] = np.array(images_ref)
+    
+    print("Writing inputs...")
+    with h5py.File('input_res_for_cnn_psf2.h5', 'w') as h5f:
+        for key in datasets_inp.keys():
+            print(key)
+            h5f.create_dataset(key, data = datasets_inp[key].astype(np.float32), dtype=np.float32)
+    
+    print("Writing references...")
+    with h5py.File('synth_res_reference_psf2.h5', 'w') as h5f:
+        for key in datasets_ref.keys():
+            print(key)
+            h5f.create_dataset(key, data = datasets_ref[key].astype(np.float32), dtype=np.float32)
+    print("Done")
