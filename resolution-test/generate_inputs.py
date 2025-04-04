@@ -109,13 +109,13 @@ for xy in xys:
 datasets_ref[key] = np.array(images_ref)
 
 print("Writing inputs...")
-with h5py.File('input_res_for_cnn_psf4.h5', 'w') as h5f:
+with h5py.File('input_res_for_cnn_psf2.h5', 'w') as h5f:
     for key in datasets_inp.keys():
         print(key)
         h5f.create_dataset(key, data = datasets_inp[key].astype(np.float32), dtype=np.float32)
 
 print("Writing references...")
-with h5py.File('synth_res_reference_psf4.h5', 'w') as h5f:
+with h5py.File('synth_res_reference_psf2.h5', 'w') as h5f:
     for key in datasets_ref.keys():
         print(key)
         h5f.create_dataset(key, data = datasets_ref[key].astype(np.float32), dtype=np.float32)
