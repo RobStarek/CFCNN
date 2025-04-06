@@ -1,2 +1,5 @@
-/resolution-test/*.h5
+/resolution-test/cnn_output_res_psf2hr.h5
+/resolution-test/input_res_for_cnn_psf2hr.h5
+/resolution-test/synth_res_reference_psf2hr.h5
+/star-test/*.h5
 *.pyc
