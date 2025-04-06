@@ -27,8 +27,8 @@ import h5py
 # `export TF_USE_LEGACY_KERAS=1` into console.
 
 # Set paths to input and output
-INPUT = 'input_res_for_cnn_psf2.h5'
-OUTPUT = 'cnn_output_res_psf2.h5'
+INPUT = 'input_res_for_cnn_psf2hr.h5'
+OUTPUT = 'cnn_output_res_psf2hr.h5'
 
 if __name__ == '__main__':
     """

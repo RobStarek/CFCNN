@@ -24,14 +24,13 @@ import h5py
 # Random number generator with fixed seed
 RNG = np.random.default_rng(seed=20250113)
 MONTE_CARLO_SAMPLES = 10  # Number of Monte Carlo samples per SNR
-BCKG = 3  # Background level (offset)
 PSFW = 2  # Width of the PSF (Gaussian standard deviation)
 RAYLEIGH = 3 * PSFW  # Approximate Rayleigh limit distance
 WIDTH = 50  # Image width
 HEIGHT = 50  # Image height
 UPSCALE = 4  # Upscaling factor for rendering reference images
 snrs = np.logspace(0, 3, 37)  # Range of tested SNRs
-distances = np.linspace(0, 1, 41) * RAYLEIGH  # Distances for emitter positions
+distances = np.linspace(0, 1, 81) * RAYLEIGH  # Distances for emitter positions
 xys = np.array([((25 - d / 2, 25), (25 + d / 2, 25)) for d in distances])
 snrs = list(snrs) + [-1]  # -1 is a special SNR indicating noiseless data
 
@@ -148,14 +147,14 @@ if __name__ == '__main__':
     datasets_ref[key] = np.array(images_ref)
 
     print("Writing inputs...")
-    with h5py.File('input_res_for_cnn_psf2.h5', 'w') as h5f:
+    with h5py.File('input_res_for_cnn_psf2hr.h5', 'w') as h5f:
         for key, data_item in datasets_inp.items():
             print(key)
             h5f.create_dataset(key, data=data_item.astype(
                 np.float32), dtype=np.float32)
 
     print("Writing references...")
-    with h5py.File('synth_res_reference_psf2.h5', 'w') as h5f:
+    with h5py.File('synth_res_reference_psf2hr.h5', 'w') as h5f:
         for key, data_item in datasets_ref.items():
             print(key)
             h5f.create_dataset(key, data=data_item.astype(
