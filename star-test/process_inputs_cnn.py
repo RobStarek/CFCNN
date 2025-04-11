@@ -27,13 +27,10 @@ import h5py
 # `export TF_USE_LEGACY_KERAS=1` into console.
 
 # Set paths to input and output
-INPUT = 'input_for_cnn_fixed_rng.h5'
+INPUT = 'input_for_cnn_star.h5'
 OUTPUT = 'cnn_output_star.h5'
 
 if __name__ == '__main__':
-    """
-    Main script execution for processing input datasets using a pre-trained CNN model.
-    """
     # Define custom objects for the model
     customs = {
         'Custom_mse_conv_func': tf.keras.losses.mse,

@@ -170,14 +170,14 @@ if __name__ == '__main__':
         snr), scale=UPSCALE), HEIGTH*UPSCALE, WIDTH*UPSCALE) for snr in snrs_mc])
 
     # Write data into H5 file to be later processed by CNN.
-    key = 'siemens_vs_snr'
+    key = 'star_vs_snr'
     dsets_ref = dict()
     dsets_inp = dict()
     dsets_ref[key] = np.copy(stack_noiseless)
     dsets_inp[key] = np.copy(stack_for_cnn)
 
     print("Inputs...")
-    with h5py.File('input_for_cnn_fixed_rng.h5', 'w') as h5f:
+    with h5py.File('input_for_cnn_star.h5', 'w') as h5f:
         for key, images in dsets_inp.items():
             print(key)
             h5f.create_dataset(key, data=images.astype(
@@ -190,20 +190,20 @@ if __name__ == '__main__':
             h5f.create_dataset(key, data=images.astype(
                 np.float32), dtype=np.float32)
 
-    # ----------- Optional macro for imageJ (uncomment this to run it) ----
-    import tifffile
-    import os
-    if not os.path.isdir('synth_data_tiff'):
-        os.mkdir('synth_data_tiff')
-    # maximal value of the last key, i.e. maximum value of highest SNR
-    mxm = np.max(dsets_inp[key])
-    for key in dsets_inp:
-        for framenum, frame in enumerate(dsets_inp[key]):
-            frame_16bit = (frame*65_000/mxm).astype(np.uint16)
-            path = f'synth_data_tiff/{key}_{framenum:d}.tiff'
-            print(path)
-            with tifffile.TiffWriter(path, imagej=True) as writer:
-                writer.write(frame_16bit)
+    # # ----------- Optional macro for imageJ (uncomment this to run it) ----
+    # import tifffile
+    # import os
+    # if not os.path.isdir('synth_data_tiff'):
+    #     os.mkdir('synth_data_tiff')
+    # # maximal value of the last key, i.e. maximum value of highest SNR
+    # mxm = np.max(dsets_inp[key])
+    # for key in dsets_inp:
+    #     for framenum, frame in enumerate(dsets_inp[key]):
+    #         frame_16bit = (frame*65_000/mxm).astype(np.uint16)
+    #         path = f'synth_data_tiff/{key}_{framenum:d}.tiff'
+    #         print(path)
+    #         with tifffile.TiffWriter(path, imagej=True) as writer:
+    #             writer.write(frame_16bit)
 
     # ----------- Optional macro for imageJ (uncomment this to run it) ----
     # #Optional generation of imageJ macro
