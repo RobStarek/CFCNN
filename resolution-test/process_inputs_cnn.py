@@ -41,7 +41,7 @@ if __name__ == '__main__':
     }
 
     # Load the pre-trained CNN model
-    model = tf.keras.models.load_model('../cnn-model/model_v3.h5', custom_objects=customs)
+    model = tf.keras.models.load_model('../cnn-model/model.h5', custom_objects=customs)
     print(model.summary())
 
     # Iterate over all datasets in the input file and transform them using the CNN

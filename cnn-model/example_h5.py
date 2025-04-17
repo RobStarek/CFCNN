@@ -1,4 +1,7 @@
-import os
+"""
+A simple example on how to use the CNN model to tranform all images in the h5 dataset.
+"""
+
 import tensorflow as tf
 import numpy as np
 import h5py
@@ -9,12 +12,12 @@ import h5py
 INPUT = 'test_in.h5'
 OUTPUT = 'test_out.h5'
 
-if __name__ == '__main'__:
+if __name__ == '__main__':
   #Replace custom metrics with default one. For running the code, training helper function
   #are irrelevant anyway.
   customs = {'Custom_mse_conv_func' : tf.keras.losses.mse, 'Custom_mae_conv_func' : tf.keras.losses.mae}
   #Load Keras model.
-  model = tf.keras.models.load_model('model_v3.h5', custom_objects = customs)
+  model = tf.keras.models.load_model('model.h5', custom_objects = customs)
   print(model.summary())
   #Iterate over all datasets in input file and transform them
   #using the neural network.
