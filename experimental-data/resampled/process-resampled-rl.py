@@ -1,0 +1,1 @@
+#put all resampled images through RL algo
