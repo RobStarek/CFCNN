@@ -4,5 +4,13 @@
 /resolution-test/input_res_for_cnn_psf2hr.h5
 /resolution-test/synth_res_reference_psf2hr.h5
 /star-test/*.h5
-/experimental-data/resampled/*.h5
+/experimental-data/resampled/mc_img1.h5
+/experimental-data/resampled/mc_img2.h5
+/experimental-data/resampled/mc_img3.h5
+/experimental-data/resampled/mc_img1_cnn.h5
+/experimental-data/resampled/mc_img2_cnn.h5
+/experimental-data/resampled/mc_img3_cnn.h5
+/experimental-data/resampled/mc_img1_rl.h5
+/experimental-data/resampled/mc_img2_rl.h5
+/experimental-data/resampled/mc_img3_rl.h5
 *.pyc
