@@ -1,5 +1,5 @@
 """
-Process generated Monte-Carlo images using our CNN model.
+Process generated Monte-Carlo images using our CFCNN model.
 """
 
 import tensorflow as tf
