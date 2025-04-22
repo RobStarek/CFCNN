@@ -15,15 +15,15 @@ Table I provides a quantitative comparison of the reconstruction quality in term
 **resolution-test**
 
 This folder contains scripts for the analysis of the resolution achievable by the CFCNN. More detailed comments are included within the scripts.
-"generate_inputs.py" generates synthetic data for resolution testing, including input images with varying signal-to-noise ratios (SNRs) and corresponding reference images, and stores the outputs in HDF5 files.\\
-"process_cnn_outputs.ipynb" evaluates the resolving ability of the CFCNN model on the generated synthetic data.\\
+"generate_inputs.py" generates synthetic data for resolution testing, including input images with varying signal-to-noise ratios (SNRs) and corresponding reference images, and stores the outputs in HDF5 files.<br />
+"process_cnn_outputs.ipynb" evaluates the resolving ability of the CFCNN model on the generated synthetic data.<br />
 "process_inputs_cnn.py" processes the input datasets by the CFCNN and saves the results in HDF5 files.
 
 **star-test**
 
-This folder contains scripts for the recreation of Figure 3 of the paper. Synthetic data are generated and analyzed by our CFCNN, the R-L deconvolution, and MEF using ThunderSTORM for a broader and more systematic evaluation of the performance beyond the presented experimental images. More detailed comments are included within the scripts.
-"generate_figure.ipynb" recreates the Fig. 3.
-"generate_inputs.py" generates synthetic 2D images of a star-shaped pattern with varying SNRs and corresponding ground truth images.
-"process_inputs_cnn.py" processes the input datasets by the CFCNN and saves the results in HDF5 files.
-"rl_module.py" provides functions for generating Gaussian kernels and performing Richardson-Lucy deconvolution.
+This folder contains scripts for the recreation of Figure 3 of the paper. Synthetic data are generated and analyzed by our CFCNN, the R-L deconvolution, and MEF using ThunderSTORM for a broader and more systematic evaluation of the performance beyond the presented experimental images. More detailed comments are included within the scripts.<br />
+"generate_figure.ipynb" recreates the Fig. 3.<br />
+"generate_inputs.py" generates synthetic 2D images of a star-shaped pattern with varying SNRs and corresponding ground truth images.<br />
+"process_inputs_cnn.py" processes the input datasets by the CFCNN and saves the results in HDF5 files.<br />
+"rl_module.py" provides functions for generating Gaussian kernels and performing Richardson-Lucy deconvolution.<br />
 "rl_process.py" applies the R-L algorithm.
