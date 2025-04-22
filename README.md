@@ -5,7 +5,7 @@ The paper is available on arXiv.
 
 **cnn-model**
 
-This folder contains the developed calibration-free convolutional neural network (CFCNN) for super-resolving image reconstruction from a single intensity frame, *and a usage example (?)*.
+This folder contains the developed calibration-free convolutional neural network (CFCNN) for super-resolving image reconstruction from a single intensity frame, and a usage example.
 
 **experimental-data**
 
@@ -15,8 +15,8 @@ Table I provides a quantitative comparison of the reconstruction quality in term
 **resolution-test**
 
 This folder contains scripts for the analysis of the resolution achievable by the CFCNN. More detailed comments are included within the scripts.
-"generate_inputs.py" generates synthetic data for resolution testing, including input images with varying signal-to-noise ratios (SNRs) and corresponding reference images, and stores the outputs in HDF5 files.
-"process_cnn_outputs.ipynb" evaluates the resolving ability of the CFCNN model on the generated synthetic data.
+"generate_inputs.py" generates synthetic data for resolution testing, including input images with varying signal-to-noise ratios (SNRs) and corresponding reference images, and stores the outputs in HDF5 files.\\
+"process_cnn_outputs.ipynb" evaluates the resolving ability of the CFCNN model on the generated synthetic data.\\
 "process_inputs_cnn.py" processes the input datasets by the CFCNN and saves the results in HDF5 files.
 
 **star-test**
