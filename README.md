@@ -3,7 +3,7 @@
 This repository contains data and scripts required for reproducing the results presented in the paper **Calibration-free single-frame super-resolving fluorescence microscopy** by Anežka Dostálová, Dominik Vašinka, Robert Stárek, and Miroslav Ježek.
 The paper is available on arXiv.
 
-##cnn-model
+## cnn-model
 
 This folder contains the developed calibration-free convolutional neural network (CFCNN) for super-resolving image reconstruction from a single intensity frame, and a usage example.
 
