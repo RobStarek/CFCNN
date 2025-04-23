@@ -207,7 +207,7 @@ if __name__ == '__main__':
 
     # ----------- Optional macro for imageJ (uncomment this to run it) ----
     # #Optional generation of imageJ macro
-    # PATH = '' #Replace this by relevant global path to ensure that imageJ sees the images.
+    # PATH = '' #Replace this with a relevant global path to ensure that imageJ sees the images.
     # template = """
     # open("{path}/synth_data_tiff/{fn_in}");
     # selectImage("{fn_in}");
