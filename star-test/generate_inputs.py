@@ -24,7 +24,7 @@ MONTE_CARLO_SAMPLES = 10
 PSFW = 2
 WIDTH = 50
 HEIGTH = 50
-BCKG = 1
+BCKG = 3
 UPSCALE = 4
 DEG = np.pi/180.
 THETA_STEP = 45*DEG
@@ -80,8 +80,10 @@ def generate_image(xyi, noise_mean, noise_std, psf_width, h, w):
         numpy.ndarray: A 2D array representing the generated image, normalized 
         such that all pixel values sum to 1.
     """
-    img = np.clip(RNG.normal(noise_mean, noise_std,
-                  h*w).reshape(h, w), 0, None)
+    # img = np.clip(RNG.normal(noise_mean, noise_std,
+    #               h*w).reshape(h, w), 0, None)
+    img = RNG.normal(noise_mean, noise_std,
+                   h*w).reshape(h, w)
     ys = np.arange(h)
     xs = np.arange(w)
     xy = np.meshgrid(xs, ys)
