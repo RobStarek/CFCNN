@@ -16,7 +16,7 @@ Inputs:
 Outputs:
 - `cnn_output_star.h5`: HDF5 file containing transformed datasets.
 
-Outputs are later process another notebook.
+Outputs are later processed in another notebook.
 """
 
 import tensorflow as tf
@@ -24,7 +24,7 @@ import numpy as np
 import h5py
 
 # One should set the following environment variable if keras 3 is used:
-# `export TF_USE_LEGACY_KERAS=1` into console.
+# `export TF_USE_LEGACY_KERAS=1` into the console.
 
 # Set paths to input and output
 INPUT = 'input_for_cnn_star.h5'

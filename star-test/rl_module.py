@@ -26,7 +26,7 @@ import scipy
 
 def Gauss_function(x_, sigma_):
     """
-    1D gaussian function. With 1/sigma^2 convention.
+    1D Gaussian function. With 1/sigma^2 convention.
     """
     return np.exp(-(x_)**2/(sigma_**2))
 
@@ -62,7 +62,7 @@ def RL_iteration_for_concurrent(kernel_, input_sample_, max_iter_ = 1e6, min_cha
     Parameters:
         kernel_ (numpy.ndarray): The convolution kernel (point spread function) used for deconvolution.
         input_sample_ (numpy.ndarray): The input image or sample to be deconvolved.
-        max_iter_ (int, optional): The maximum number of iterations to perform. Default is 10^6.
+        max_iter_ (int, optional): The maximum number of iterations to perform. The default is 10^6.
         min_change_ (float, optional): The minimum change per pixel to stop the iteration. Default is 10^(-10).
     Returns:
         numpy.ndarray: The deconvolved image with the same total intensity as the input sample.
