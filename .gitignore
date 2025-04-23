@@ -14,3 +14,4 @@
 /experimental-data/resampled/mc_img2_rl.h5
 /experimental-data/resampled/mc_img3_rl.h5
 *.pyc
+star-test/compare.ipynb

@@ -12,7 +12,7 @@ def norm(img):
 M = 11 #~ 2.*4*sqrt(2)
 KERNEL_X = Gauss_kernel(M)
 ITERS = 100e3
-CPU_units_to_use = 40 #rewrite according to your needs
+CPU_units_to_use = 10 #rewrite according to your needs
 
 def rl_func(img_pair):    
     """
