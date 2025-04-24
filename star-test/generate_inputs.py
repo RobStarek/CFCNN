@@ -10,7 +10,6 @@ Usage:
     Uncomment the optional sections to generate TIFF files and an ImageJ macro.
     - The random number generator is fixed with a seed for repeatable executions.
     - The script assumes the working directory is writable for saving the output files.
-    - The optional ImageJ macro is used for automated application of ThunderSTORM multi-emitter fitting.
 """
 
 import numpy as np
@@ -192,53 +191,5 @@ if __name__ == '__main__':
             h5f.create_dataset(key, data=images.astype(
                 np.float32), dtype=np.float32)
 
-    # # ----------- Optional macro for imageJ (uncomment this to run it) ----
-    # import tifffile
-    # import os
-    # if not os.path.isdir('synth_data_tiff'):
-    #     os.mkdir('synth_data_tiff')
-    # # maximal value of the last key, i.e. maximum value of highest SNR
-    # mxm = np.max(dsets_inp[key])
-    # for key in dsets_inp:
-    #     for framenum, frame in enumerate(dsets_inp[key]):
-    #         frame_16bit = (frame*65_000/mxm).astype(np.uint16)
-    #         path = f'synth_data_tiff/{key}_{framenum:d}.tiff'
-    #         print(path)
-    #         with tifffile.TiffWriter(path, imagej=True) as writer:
-    #             writer.write(frame_16bit)
-
-    # ----------- Optional macro for imageJ (uncomment this to run it) ----
-    # #Optional generation of imageJ macro
-    # PATH = '' #Replace this with a relevant global path to ensure that imageJ sees the images.
-    # template = """
-    # open("{path}/synth_data_tiff/{fn_in}");
-    # selectImage("{fn_in}");
-    # run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
-    # run("Export results", "filepath={path}/thunderstorm_outputs/{fn_out} fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
-    # close;
-    # if (isOpen("Results")) {{
-    #         selectWindow("Results");
-    #         run("Close" );
-    # }};
-    # if (isOpen("Log")) {{
-    #         selectWindow("Log");
-    #         run("Close" );
-    # }};
-    # while (nImages()>0) {{
-    #         selectImage(nImages());
-    #         run("Close");
-    # }};
-    # """
-    # if not os.path.isdir('thunderstorm_outputs'):
-    #     os.mkdir('thunderstorm_outputs')
-
-    # with open('imageJmacro.txt', 'w') as mf:
-    #     for key in dsets_inp.keys():
-    #         print(f"{key} >>> ...")
-    #         n = dsets_inp[key].shape[0]
-    #         for i in range(n):
-    #             print(i)
-    #             fn_in = f'{key}_{i}.tiff'
-    #             fn_out = f'{key}_{i:03d}.csv'
-    #             txt = (template.format(fn_in = fn_in, fn_out = fn_out, path = PATH))
-    #             mf.write(txt)
+    # For conversion to tiff for MEF fitting in ThunderStorm,
+    # please refer to convert_inputs_for_mef.py

@@ -15,3 +15,6 @@
 /experimental-data/resampled/mc_img3_rl.h5
 *.pyc
 star-test/compare.ipynb
+/star-test/synth_data_tiff
+/star-test/thunderstorm_outputs
+/star-test/MEFimageJmacro.txt
