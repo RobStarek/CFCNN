@@ -185,7 +185,7 @@ if __name__ == '__main__':
                 np.float32), dtype=np.float32)
 
     print("References...")
-    with h5py.File('synth_reference.h5', 'w') as h5f:
+    with h5py.File('star_reference.h5', 'w') as h5f:
         for key, images in dsets_ref.items():
             print(key)
             h5f.create_dataset(key, data=images.astype(

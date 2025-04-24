@@ -1,9 +1,7 @@
-# ignore bulky h5 datafiles with synthetica data
-# as they can be easially generated
-/resolution-test/cnn_output_res_psf2hr.h5
-/resolution-test/input_res_for_cnn_psf2hr.h5
-/resolution-test/synth_res_reference_psf2hr.h5
-/star-test/*.h5
+#general
+*.pyc
+
+#experimental test - ignore bulky resampled data, as they can be generated
 /experimental-data/resampled/mc_img1.h5
 /experimental-data/resampled/mc_img2.h5
 /experimental-data/resampled/mc_img3.h5
@@ -13,8 +11,21 @@
 /experimental-data/resampled/mc_img1_rl.h5
 /experimental-data/resampled/mc_img2_rl.h5
 /experimental-data/resampled/mc_img3_rl.h5
-*.pyc
+
+#sythetic data tests - ignore bulky h5 datafiles with synthetica data
+#as they can be easially generated
+
+#star-test
 star-test/compare.ipynb
+/star-test/rl_star.h5
+/star-test/star_reference.h5
+/star-test/input_for_cnn_star.h5
+/star-test/cnn_output_star.h5
 /star-test/synth_data_tiff
 /star-test/thunderstorm_outputs
 /star-test/MEFimageJmacro.txt
+
+#resolution-test
+/resolution-test/cnn_output_res_psf2hr.h5
+/resolution-test/input_res_for_cnn_psf2hr.h5
+/resolution-test/synth_res_reference_psf2hr.h5
