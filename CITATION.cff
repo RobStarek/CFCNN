@@ -1,0 +1,58 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Calibration-free single-frame super-resolving fluorescence
+  microscopy
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Anežka
+    family-names: Dostálová
+    email: dostalova@optics.upol.cz
+    affiliation: >-
+      Palacky University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 77900
+      Czechia
+    orcid: 'https://orcid.org/0009-0008-9480-6801'
+  - given-names: Robert
+    family-names: Stárek
+    email: starek@optics.upol.cz
+    affiliation: >-
+      Palacky University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 77900
+      Czechia
+    orcid: 'https://orcid.org/0000-0002-5396-6293'
+  - given-names: Dominik
+    family-names: Vašinka
+    email: vasinka@optics.upol.cz
+    orcid: 'https://orcid.org/0000-0003-3218-8717'
+    affiliation: >-
+      Palacky University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 77900
+      Czechia
+  - given-names: Miroslav
+    family-names: Ježek
+    email: jezek@optics.upol.cz
+    affiliation: >-
+      Palacky University Olomouc, Faculty of Science,
+      Department of Optics, 17. listopadu 1192/12 77900
+      Czechia
+    orcid: 'https://orcid.org/0000-0003-1939-4495'
+abstract: >-
+  This repository contains data and scripts required for
+  reproducing the results presented in the paper
+  Calibration-free single-frame super-resolving fluorescence
+  microscopy by Anežka Dostálová, Dominik Vašinka, Robert
+  Stárek, and Miroslav Ježek. The paper is available on
+  arXiv.
+keywords:
+  - microscopy
+  - single-molecule
+  - deep-learning
+license: MIT
+version: '0.9'
+date-released: '2025-04-25'
