@@ -24,6 +24,9 @@ import h5py
 # Random number generator with fixed seed
 RNG = np.random.default_rng(seed=20250113)
 MONTE_CARLO_SAMPLES = 10  # Number of Monte Carlo samples per SNR
+#MONTE_CARLO_SAMPLES = 100 #for final test, do this at your own risk, generated input have 3 GB
+#and the corresponding CFCNN output file around 45 GB.
+
 PSFW = 2  # Width of the PSF (Gaussian standard deviation)
 RAYLEIGH = 3 * PSFW  # Approximate Rayleigh limit distance
 WIDTH = 50  # Image width
