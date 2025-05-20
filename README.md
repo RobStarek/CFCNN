@@ -4,6 +4,8 @@ This repository contains data and scripts required for reproducing the results p
 
 The paper is available on arXiv: [https://arxiv.org/abs/2505.13293](https://arxiv.org/abs/2505.13293).
 
+[![DOI](https://zenodo.org/badge/960423522.svg)](https://doi.org/10.5281/zenodo.15470389)
+
 ## cnn-model
 
 This folder contains the developed calibration-free convolutional neural network (**CFCNN**) for super-resolving image reconstruction from a single intensity frame, and a usage example.
