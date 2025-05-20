@@ -1,6 +1,7 @@
 # Calibration-free single-frame super-resolution fluorescence microscopy
 
 This repository contains data and scripts required for reproducing the results presented in the paper **Calibration-free single-frame super-resolution fluorescence microscopy** by Anežka Dostálová, Dominik Vašinka, Robert Stárek, and Miroslav Ježek.
+
 The paper is available on arXiv: [https://arxiv.org/abs/2505.13293](https://arxiv.org/abs/2505.13293).
 
 ## cnn-model
