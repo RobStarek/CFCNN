@@ -2,7 +2,9 @@
 
 This repository contains data and scripts required for reproducing the results presented in the paper **Calibration-free single-frame super-resolution fluorescence microscopy** by Anežka Dostálová, Dominik Vašinka, Robert Stárek, and Miroslav Ježek.
 
-The paper is available on arXiv: [https://arxiv.org/abs/2505.13293](https://arxiv.org/abs/2505.13293).
+The paper is available on:
+* arXiv: [https://arxiv.org/abs/2505.13293](https://arxiv.org/abs/2505.13293).
+* bioRxiv: [https://www.biorxiv.org/content/10.1101/2025.05.20.655080v1](https://www.biorxiv.org/content/10.1101/2025.05.20.655080v1)
 
 [![DOI](https://zenodo.org/badge/960423522.svg)](https://doi.org/10.5281/zenodo.15470389)
 
