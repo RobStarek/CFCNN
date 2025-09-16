@@ -25,6 +25,7 @@ if __name__ == '__main__':
       for dsetkey in h5fi.keys():
           print(dsetkey, h5fi[dsetkey].shape, h5fi[dsetkey].dtype)
           images = np.array(h5fi[dsetkey])
+          #here we use CFCNN on the opened image
           transformed = model.predict(images)
           h5fo.create_dataset(dsetkey, data = transformed)
   print('done')
