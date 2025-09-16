@@ -8,9 +8,19 @@ The paper is available on:
 
 [![DOI](https://zenodo.org/badge/960423522.svg)](https://doi.org/10.5281/zenodo.15470389)
 
+## Python environment
+We have used two Python environments. For all scripts, except the DECODE-related one we used the python 3.11. environemnet specified by `requirements-general.txt`. For DECODE-related scripts we used python 3.10. and the packages specified in `decode-model/requirements.txt`. 
+
 ## cnn-model
 
 This folder contains the developed calibration-free convolutional neural network (**CFCNN**) for super-resolving image reconstruction from a single intensity frame, and a usage example.
+
+
+## decode-model
+
+Pretrained DECODE reference models to compare agains CFCNN. They are used to reconstruct experimental data and the synthetic data. These models originate in training notebooks placed in `reference_decode_training` directory. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files.
+
+
 
 ## experimental-data
 
