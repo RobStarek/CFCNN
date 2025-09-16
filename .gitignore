@@ -11,6 +11,9 @@
 /experimental-data/resampled/mc_img1_rl.h5
 /experimental-data/resampled/mc_img2_rl.h5
 /experimental-data/resampled/mc_img3_rl.h5
+/experimental-data/resampled/thunderstorm_outputs
+/experimental-data/resampled/thst_data
+/experimental-data/imageJmacro.txt
 
 #sythetic data tests - ignore bulky h5 datafiles with synthetica data
 #as they can be easially generated
