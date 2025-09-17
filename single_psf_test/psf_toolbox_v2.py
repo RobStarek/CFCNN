@@ -2,11 +2,8 @@
 psf_toolbox.py
 This module provides tools for generating point spread functions (PSFs) and rendering emitter distributions convolved with a PSF.
 
-Functions:
-    - bin_image: Downsamples a grayscale image by binning blocks and replacing them with their mean.
+Functions:    
     - psf_high_NA_2D: Generates a 2D in-focus scalar PSF with Zernike aberrations and √cosθ apodisation.
-    - scaled_psf: Returns a 50x50 PSF, normalized, with fixed pupil sampling and padding.
-    - scaled_psf2: Returns a 50x50 PSF for arbitrary pixel size in Airy units, using fast interpolation.
     - render_psf_emitters: Renders a set of emitters convolved with a high-resolution PSF and rescales to 50x50.
 
 Dependencies:
@@ -15,7 +12,7 @@ Dependencies:
 
 Examples
 --------
-TO BE DONE
+See below.
 """
 
 import numpy as np
@@ -25,35 +22,6 @@ from numpy.fft import fftshift, ifft2, ifftshift
 import scipy.ndimage as ndi
 import h5py
 
-
-# def bin_image(img: np.ndarray, bin_size: int) -> np.ndarray:
-#     """
-#     Downsamples a grayscale image by binning. Each bin_size x bin_size block
-#     is replaced with its mean, reducing the image size.
-
-#     Parameters:
-#         img (np.ndarray): 2D input image (dtype=uint8).
-#         bin_size (int): Binning factor (block size).
-
-#     Returns:
-#         np.ndarray: Downsampled image (dtype=uint8).
-#     """
-#     h, w = img.shape
-#     h_trim = h - h % bin_size
-#     w_trim = w - w % bin_size
-
-#     img_trimmed = img[:h_trim, :w_trim]
-
-#     # Reshape into 4D: (new_h, bin_size, new_w, bin_size)
-#     reshaped = img_trimmed.reshape(
-#         h_trim // bin_size, bin_size, w_trim // bin_size, bin_size
-#     )
-
-#     # Compute mean over binning dimensions
-#     binned = reshaped.mean(axis=(1, 3))
-
-#     # Round and convert to uint8
-#     return binned
 
 def psf_high_NA_vector(N_pupil=256, pad_factor=8,
                        wavelength=0.580,        # µm
@@ -174,67 +142,6 @@ def psf_high_NA_vector(N_pupil=256, pad_factor=8,
     return psf, coords, coords
 
 
-# def scaled_psf(NA: float = 1.4, n: float = 1.5, **A_kwargs) -> np.ndarray:
-#     """
-#     Generates a scaled 2D point spread function (PSF) array with specified numerical aperture (NA) and refractive index (n).
-#     It matched our ~60 nm px by some approximation.
-
-#     The function computes a high-resolution PSF using fixed pupil sampling (256) and padding factor (8), then bins and crops the result to a 50x50 region centered on the PSF. It normalizes the cropped PSF so that its sum is 1.
-#     If the PSF extends beyond the cropped region (i.e., significant intensity >1% of maximmum at the edges), a warning is printed.
-#     Parameters:
-#         NA (float, optional): Numerical aperture of the objective. Default is 1.4.
-#         n (float, optional): Refractive index of the medium. Default is 1.5.
-#         **A_kwargs: Additional keyword arguments passed to `psf_high_NA_2D`.
-#     Returns:
-#         np.ndarray: A 50x50 normalized PSF array.
-#     Warns:
-#         Prints a warning if the PSF is likely larger than the 50x50 cropped region.
-#     """
-#     # if A_kwargs is None:
-#     #     A_kwargs = dict()
-#     hires, x, y = psf_high_NA_2D(256, 8, NA=NA, n=n, **A_kwargs)
-#     binned = bin_image(hires, 2)
-#     mid = 512  # binned center
-#     cropped = binned[mid - 25 : mid + 25, mid - 25 : mid + 25]
-#     mxm = np.max(cropped)
-
-#     # test whether we do not crop too much, tolerate 1% of maximum, otherwise print warning:
-#     try:
-#         assert cropped[0, 0] / mxm < 1e-2
-#     except AssertionError:
-#         print("Warning: PSF is likely larger than 50x50")
-
-#     return cropped / np.sum(cropped)
-
-
-# def scaled_psf2(px_size_au, NA: float = 1.4, n: float = 1.5, **A_kwargs) -> np.ndarray:
-#     """
-#     Generates a scaled 2D point spread function (PSF) array with specified pixel size and optical parameters.
-
-#     This function computes a high-resolution PSF using the `psf_high_NA_2D` function, crops it to a region corresponding to the desired physical size, and rescales it to a 50x50 array using cubic interpolation. The resulting PSF is normalized to sum to 1.
-
-#     Parameters:
-#         px_size_au (float): Pixel size in Airy units.
-#         NA (float, optional): Numerical aperture of the objective. Default is 1.4.
-#         n (float, optional): Refractive index of the medium. Default is 1.5.
-#         **A_kwargs: Additional keyword arguments passed to `psf_high_NA_2D`.
-
-#     Returns:
-#         np.ndarray: A 50x50 normalized PSF array.
-#     """
-#     hires, x, y = psf_high_NA_2D(256, 8, NA=NA, n=n, **A_kwargs)
-#     dx = x[1] - x[0]
-#     halfwidth_dx = 25 * px_size_au
-#     mid = 1024
-#     halfwidth_dx_steps = int(round(halfwidth_dx / dx))
-#     cropped = hires[
-#         mid - halfwidth_dx_steps : mid + halfwidth_dx_steps,
-#         mid - halfwidth_dx_steps : mid + halfwidth_dx_steps,
-#     ]
-#     scaled = cv2.resize(cropped, (50, 50), interpolation=cv2.INTER_CUBIC)
-#     return scaled / np.sum(scaled)
-
-
 def render_psf_emitters(
     xyi: np.ndarray,
     px_size_um: float,
@@ -279,17 +186,7 @@ def render_psf_emitters(
     return scaled
 
 
-# ##Example 1:
-# psf = scaled_psf(1.4, 1.5, A_def=0.05)
-# plt.matshow(psf)
-# plt.show()
-
-# au = 580*0.61/1.4 #airy unit
-# psf2 = scaled_psf2(58/au,1.4, 1.5, A_def=0.05)
-# plt.matshow(psf2)
-# plt.show()
-
-# ##Example 2:
+# ##Example:
 # psfhr, x, y = psf_high_NA_2D(256, 8, A_def = 0.05)
 # psfhr = psfhr[1024-64 : 1024+64, 1024-64 : 1024+64]
 # xyi = np.array([
