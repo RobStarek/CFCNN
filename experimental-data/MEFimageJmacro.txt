@@ -1,0 +1,1981 @@
+
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_0.tiff");
+    selectImage("img_0.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_000.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_1.tiff");
+    selectImage("img_1.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_001.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_2.tiff");
+    selectImage("img_2.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_002.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_3.tiff");
+    selectImage("img_3.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_003.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_4.tiff");
+    selectImage("img_4.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_004.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_5.tiff");
+    selectImage("img_5.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_005.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_6.tiff");
+    selectImage("img_6.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_006.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_7.tiff");
+    selectImage("img_7.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_007.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_8.tiff");
+    selectImage("img_8.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_008.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_9.tiff");
+    selectImage("img_9.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_009.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_10.tiff");
+    selectImage("img_10.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_010.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_11.tiff");
+    selectImage("img_11.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_011.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_12.tiff");
+    selectImage("img_12.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_012.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_13.tiff");
+    selectImage("img_13.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_013.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_14.tiff");
+    selectImage("img_14.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_014.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_15.tiff");
+    selectImage("img_15.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_015.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_16.tiff");
+    selectImage("img_16.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_016.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_17.tiff");
+    selectImage("img_17.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_017.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_18.tiff");
+    selectImage("img_18.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_018.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_19.tiff");
+    selectImage("img_19.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_019.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_20.tiff");
+    selectImage("img_20.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_020.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_21.tiff");
+    selectImage("img_21.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_021.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_22.tiff");
+    selectImage("img_22.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_022.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_23.tiff");
+    selectImage("img_23.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_023.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_24.tiff");
+    selectImage("img_24.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_024.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_25.tiff");
+    selectImage("img_25.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_025.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_26.tiff");
+    selectImage("img_26.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_026.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_27.tiff");
+    selectImage("img_27.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_027.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_28.tiff");
+    selectImage("img_28.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_028.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_29.tiff");
+    selectImage("img_29.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_029.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_30.tiff");
+    selectImage("img_30.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_030.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_31.tiff");
+    selectImage("img_31.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_031.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_32.tiff");
+    selectImage("img_32.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_032.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_33.tiff");
+    selectImage("img_33.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_033.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_34.tiff");
+    selectImage("img_34.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_034.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_35.tiff");
+    selectImage("img_35.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_035.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_36.tiff");
+    selectImage("img_36.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_036.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_37.tiff");
+    selectImage("img_37.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_037.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_38.tiff");
+    selectImage("img_38.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_038.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_39.tiff");
+    selectImage("img_39.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_039.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_40.tiff");
+    selectImage("img_40.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_040.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_41.tiff");
+    selectImage("img_41.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_041.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_42.tiff");
+    selectImage("img_42.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_042.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_43.tiff");
+    selectImage("img_43.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_043.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_44.tiff");
+    selectImage("img_44.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_044.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_45.tiff");
+    selectImage("img_45.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_045.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_46.tiff");
+    selectImage("img_46.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_046.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_47.tiff");
+    selectImage("img_47.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_047.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_48.tiff");
+    selectImage("img_48.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_048.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_49.tiff");
+    selectImage("img_49.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_049.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_50.tiff");
+    selectImage("img_50.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_050.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_51.tiff");
+    selectImage("img_51.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_051.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_52.tiff");
+    selectImage("img_52.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_052.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_53.tiff");
+    selectImage("img_53.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_053.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_54.tiff");
+    selectImage("img_54.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_054.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_55.tiff");
+    selectImage("img_55.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_055.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_56.tiff");
+    selectImage("img_56.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_056.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_57.tiff");
+    selectImage("img_57.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_057.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_58.tiff");
+    selectImage("img_58.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_058.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_59.tiff");
+    selectImage("img_59.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_059.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_60.tiff");
+    selectImage("img_60.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_060.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_61.tiff");
+    selectImage("img_61.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_061.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_62.tiff");
+    selectImage("img_62.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_062.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_63.tiff");
+    selectImage("img_63.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_063.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_64.tiff");
+    selectImage("img_64.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_064.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_65.tiff");
+    selectImage("img_65.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_065.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_66.tiff");
+    selectImage("img_66.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_066.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_67.tiff");
+    selectImage("img_67.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_067.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_68.tiff");
+    selectImage("img_68.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_068.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_69.tiff");
+    selectImage("img_69.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_069.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_70.tiff");
+    selectImage("img_70.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_070.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_71.tiff");
+    selectImage("img_71.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_071.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_72.tiff");
+    selectImage("img_72.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_072.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_73.tiff");
+    selectImage("img_73.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_073.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_74.tiff");
+    selectImage("img_74.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_074.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_75.tiff");
+    selectImage("img_75.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_075.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_76.tiff");
+    selectImage("img_76.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_076.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_77.tiff");
+    selectImage("img_77.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_077.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_78.tiff");
+    selectImage("img_78.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_078.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_79.tiff");
+    selectImage("img_79.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_079.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_80.tiff");
+    selectImage("img_80.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_080.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_81.tiff");
+    selectImage("img_81.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_081.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_82.tiff");
+    selectImage("img_82.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_082.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_83.tiff");
+    selectImage("img_83.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_083.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_84.tiff");
+    selectImage("img_84.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_084.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_85.tiff");
+    selectImage("img_85.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_085.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_86.tiff");
+    selectImage("img_86.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_086.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_87.tiff");
+    selectImage("img_87.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_087.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_88.tiff");
+    selectImage("img_88.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_088.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_89.tiff");
+    selectImage("img_89.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_089.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_90.tiff");
+    selectImage("img_90.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_090.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_91.tiff");
+    selectImage("img_91.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_091.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_92.tiff");
+    selectImage("img_92.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_092.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_93.tiff");
+    selectImage("img_93.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_093.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_94.tiff");
+    selectImage("img_94.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_094.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_95.tiff");
+    selectImage("img_95.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_095.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_96.tiff");
+    selectImage("img_96.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_096.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_97.tiff");
+    selectImage("img_97.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_097.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_98.tiff");
+    selectImage("img_98.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_098.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_99.tiff");
+    selectImage("img_99.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_099.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_100.tiff");
+    selectImage("img_100.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_100.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_101.tiff");
+    selectImage("img_101.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_101.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_102.tiff");
+    selectImage("img_102.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_102.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_103.tiff");
+    selectImage("img_103.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_103.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_104.tiff");
+    selectImage("img_104.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_104.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_105.tiff");
+    selectImage("img_105.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_105.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_106.tiff");
+    selectImage("img_106.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_106.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_107.tiff");
+    selectImage("img_107.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_107.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_108.tiff");
+    selectImage("img_108.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_108.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
+    open("C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/synth_data_tiff/img_109.tiff");
+    selectImage("img_109.tiff");
+    run("Run analysis", "filter=[Wavelet filter (B-Spline)] scale=2.0 order=3 detector=[Local maximum] connectivity=8-neighbourhood threshold=std(Wave.F1) estimator=[PSF: Integrated Gaussian] sigma=1.6 fitradius=3 method=[Weighted Least squares] full_image_fitting=false mfaenabled=true keep_same_intensity=false nmax=5 fixed_intensity=false pvalue=1.0E-6 renderer=[Averaged shifted histograms] magnification=5.0 colorizez=false threed=false shifts=2 repaint=50");
+    run("Export results", "filepath=C:/Users/admin/Documents/GitHub/SinFraSupR/experimental-data/thunderstorm_outputs/img_109.csv fileformat=[CSV (comma separated)] sigma=true intensity=true chi2=true offset=true saveprotocol=true x=true y=true bkgstd=true id=true uncertainty=true frame=true");
+    close;
+    if (isOpen("Results")) {
+            selectWindow("Results");
+            run("Close" );
+    };
+    if (isOpen("Log")) {
+            selectWindow("Log");
+            run("Close" );
+    };
+    while (nImages()>0) {
+            selectImage(nImages());
+            run("Close");
+    };
+    
