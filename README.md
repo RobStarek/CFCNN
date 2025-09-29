@@ -48,7 +48,7 @@ This will load the pretrained model ([model.h5](cnn-model/model.h5)), process th
 ## 3. Data and Results
 
 - Input and output data are stored in HDF5 format.
-- For more advanced usage, see the scripts and notebooks in the [`experimental-data`](experimental-data), [`resolution-test`](resolution-test), and [`star-test`](star-test) folders.
+- For more details, see the scripts and notebooks in the [`experimental-data`](experimental-data), [`resolution-test`](resolution-test), and [`star-test`](star-test) folders.
 
 ## 4. Additional Information
 
