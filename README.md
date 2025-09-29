@@ -99,6 +99,7 @@ This folder contains scripts for the recreation of Figure 3 of the paper. Synthe
 * `rl_process.py` applies the R-L algorithm.
 * `process_decode.ipynb` uses DECODE model to process the test dataset.
 
-## single_psf_test
-Here we test tolerance of CFCNN model to optical aberrations in the microscope. We parameterize the aberration using Zernike polynomials. We test the resilience agains defocus, spherical aberration, coma, and astigmatism.
+## aberration-tolerance
+
+Here we test tolerance of CFCNN model to optical aberrations in the microscope. We parameterize the aberration using Zernike polynomials. We test the resilience agains defocus, spherical aberration, coma, and astigmatism. We also test various choices of numerical aperture.
 
