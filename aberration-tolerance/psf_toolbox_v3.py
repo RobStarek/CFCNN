@@ -3,8 +3,8 @@ psf_toolbox.py
 This module provides tools for generating point spread functions (PSFs) and rendering emitter distributions convolved with a PSF.
 
 Functions:
-    - psf_high_NA_2D: Generates a 2D in-focus scalar PSF with Zernike aberrations and √cosθ apodisation.
-    - scaled_psf: Returns a 50x50 PSF, normalized, with fixed pupil sampling and pixel size.
+    - psf_high_NA_vector: Generates a 2D in-focus scalar PSF with Zernike aberrations and √cosθ apodisation.
+    - scaled_psf_vector: Returns a 50x50 PSF, normalized, with fixed pupil sampling and pixel size.
     - render_psf_emitters: Renders a set of emitters convolved with a high-resolution PSF and rescales to 50x50.
 
 Dependencies:
