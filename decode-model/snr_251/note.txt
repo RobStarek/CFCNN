@@ -1,0 +1,2 @@
+SNR 251 v2
+/cluster/home/starek/cfcnn/CFCNN/reference_decode_training/individual-attempts/run2_251/2025-10-28_06-51-31_002.cluster.qolo

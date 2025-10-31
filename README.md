@@ -75,7 +75,7 @@ Here we store DECODE models trained to fit our experimental and synthetic data a
 
 ## decode-model
 
-Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. These models originate in training notebooks placed in `reference_decode_training` directory. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files.
+Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files saved in the model directory.
 
 ## experimental-data
 

@@ -1,0 +1,4 @@
+
+SNR 63 v2
+orig dir /cluster/home/starek/cfcnn/CFCNN/reference_decode_training/individual-attempts/run2_63/2025-10-27_23-41-02_002.cluster.QOLO
+
