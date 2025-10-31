@@ -9,4 +9,4 @@
   * Run `convert_inputs_for_mef.py`
   * Process tiff file using imageJ/ThunderStorm, with the help of generated `MEFImageJmacro.txt`.
   * Render localized emitters using `render_mef.py`.
-* Get the final results with notebook `generate_figure_v3.ipynb`.
+* Get the final results with notebook `generate_figure.ipynb`.
