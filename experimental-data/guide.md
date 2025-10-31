@@ -11,5 +11,5 @@
   - resulting localization data is then rendered into h5 files using `render_mef.py` - OK
 - process resampled data with DECODE, use `process-resampled-decode.py`
 - evaluate metrics with `evaluate-std-metrics-v2.ipynb` to obtain metrics table with uncertainties
-- use `Figure3.ipynb` to produce the figure in the manuscript
+- use `Figure2.ipynb` to produce the figure in the manuscript
 
