@@ -10,6 +10,6 @@
   - run `prepare_for_thunderstorm.py` and then run the generated `imageJmacro.txt` in imageJ - OK
   - resulting localization data is then rendered into h5 files using `render_mef.py` - OK
 - process resampled data with DECODE, use `process-resampled-decode.py`
-- evaluate metrics with `evaluate-std-metrics-v2.ipynb` to obtain metrics table with uncertainties
+- evaluate metrics with `evaluate-std-metrics-v3.ipynb` to obtain metrics table with uncertainties
 - use `Figure2.ipynb` to produce the figure in the manuscript
 
