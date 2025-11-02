@@ -69,13 +69,9 @@ If you have any questions, please refer to the documentation in each folder or o
 This directory contains the developed calibration-free convolutional neural network (**CFCNN**) for super-resolving image reconstruction from a single intensity frame, and a usage example.
 
 
-## decode-model & reference_decode_training
-
-Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. These models originate in training notebooks placed in `reference_decode_training` directory. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files. If you would like to train DECODE yourself, then please update models in `decode-model` directory, as the other script rely on this structure.
-
 ## decode-model
 
-Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files saved in the model directory.
+Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files saved in the model directory. Note that training is a stachastic process and the resulting models may vary. If you would like to train DECODE yourself, then please update models in `decode-model` directory, as the other script rely on this structure.
 
 ## experimental-data
 
