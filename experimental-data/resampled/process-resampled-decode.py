@@ -77,8 +77,8 @@ if __name__ == '__main__':
                              "Refer to CPU version or check your installation.")
     
     # here you need to specify the parameters with suffix _run.yaml in your model's output folder (not param_run_in.yaml)
-    param_path = '../../decode-model/gauss_snr_74/param_run.yaml'
-    model_path = '../../decode-model/gauss_snr_74/model_0.pt'
+    param_path = '../../decode-model/model-for-exp/param_run.yaml'
+    model_path = '../../decode-model/model-for-exp/model_0.pt'
     meta = {
         'Camera': {
             'baseline': 50,

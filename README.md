@@ -9,7 +9,7 @@ The paper is available on:
 [![DOI](https://zenodo.org/badge/960423522.svg)](https://doi.org/10.5281/zenodo.15470389)
 
 ## Python environment
-We have used two Python environments. For all scripts, except the DECODE-related one we used the python 3.11. environemnet specified by `requirements-general.txt`. For DECODE-related scripts we used python 3.10. and the packages specified in `decode-model/requirements.txt`. 
+We have used two Python environments. For all scripts, except the DECODE-related one we used the python 3.11. environment specified by `requirements-general.txt`. For DECODE-related scripts we used python 3.10. and the packages specified in the `decode-model/requirements.txt`. 
 
 # Getting Started
 
@@ -31,7 +31,7 @@ Navigate to the `cnn-model` directory. You can run the provided example notebook
 
 - **Jupyter Notebook:**  
   Open `example_h5.ipynb` in Jupyter and run the cells to see how to load the model and process test data.
-  Make sure you have activated legacy support for Keras 2 in your jupyter environment. If this is an issue, plain python in combination with setting environmental variables usually do the trick. To set environement variable in linux console, one doest this:
+  Make sure you have activated legacy support for Keras 2 in your jupyter environment. If this is an issue, plain python in combination with setting environmental variables usually do the trick. To set environment variable in linux console, use the following command:
   ```bash
   export TF_USE_LEGACY_KERAS=1
   ```
@@ -52,7 +52,7 @@ This will load the pretrained model ([model.h5](cnn-model/model.h5)), process th
 
 ## 4. Additional Information
 
-- For details on the project structure and available scripts, see [README.md](README.md).
+- For details on the project structure and available scripts, see this readme, corresponding `guide.md` files in the corresponding subdirectories, and comments in the code.
 - For reproducing figures and tables from the paper, refer to the notebooks in [`experimental-data`](experimental-data) and [`star-test`](star-test).
 
 ## 5. Notes
@@ -71,7 +71,7 @@ This directory contains the developed calibration-free convolutional neural netw
 
 ## decode-model
 
-Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files saved in the model directory. Note that training is a stachastic process and the resulting models may vary. If you would like to train DECODE yourself, then please update models in `decode-model` directory, as the other script rely on this structure.
+Here we store DECODE models trained to fit our experimental and synthetic data as a reference to compare against CFCNN. They are used to reconstruct experimental data and the synthetic data. The environment used for DECODE training and inference is specified by `requirements.txt` file. The training parameters are specified by .yaml files saved in the model directory. Note that training is a stochastic process and the resulting models may vary. If you would like to train DECODE yourself, then please update models in `decode-model` directory, as the other scripts rely on this structure, or prodive a path to your new models in the corresponding scripts.
 
 ## experimental-data
 
@@ -93,9 +93,9 @@ This folder contains scripts for the recreation of Figure 3 of the paper. Synthe
 * `process_inputs_cnn.py` processes the input datasets by the CFCNN and saves the results in HDF5 files.
 * `rl_module.py` provides functions for generating Gaussian kernels and performing Richardson-Lucy deconvolution.
 * `rl_process.py` applies the R-L algorithm.
-* `process_decode.ipynb` uses DECODE model to process the test dataset.
+* `process_decode_individual.ipynb` uses DECODE model to process the test dataset.
 
 ## aberration-tolerance
 
-Here we test tolerance of CFCNN model to optical aberrations in the microscope. We parameterize the aberration using Zernike polynomials. We test the resilience agains defocus, spherical aberration, coma, and astigmatism. We also test various choices of numerical aperture.
+Here we test tolerance of CFCNN model to optical aberrations in the microscope. We parameterize the aberration using Zernike polynomials. We test the resilience against defocus, spherical aberration, coma, astigmatism, and various choices of numerical aperture.
 

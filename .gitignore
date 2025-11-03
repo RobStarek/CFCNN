@@ -22,6 +22,7 @@
 star-test/compare.ipynb
 /star-test/rl_star.h5
 /star-test/star_reference.h5
+/star-test/star_reference_cnts.h5
 /star-test/input_for_cnn_star.h5
 /star-test/cnn_output_star.h5
 /star-test/synth_data_tiff
