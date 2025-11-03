@@ -2,16 +2,13 @@ import sys
 
 import decode
 import decode.utils
-
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 import yaml
-
 import h5py
-
 import scipy.ndimage as ndi
 
 def l1norm(a):
@@ -80,8 +77,8 @@ if __name__ == '__main__':
                              "Refer to CPU version or check your installation.")
     
     # here you need to specify the parameters with suffix _run.yaml in your model's output folder (not param_run_in.yaml)
-    param_path = '../../decode-model/gaussian_psf_2px/param_run.yaml'
-    model_path = '../../decode-model/gaussian_psf_2px/model_0.pt'
+    param_path = '../../decode-model/gauss_snr_74/param_run.yaml'
+    model_path = '../../decode-model/gauss_snr_74/model_0.pt'
     meta = {
         'Camera': {
             'baseline': 50,
@@ -149,14 +146,21 @@ if __name__ == '__main__':
     for file_in, file_out in zip(INPUTS, OUTPUTS):
         with h5py.File(file_in, 'r') as h5fi, h5py.File(file_out, 'w') as h5fo:
             for key in list(h5fi.keys()):
+                print("--- "*4)
                 print(key, "...")
+                print("--- "*4)
                 rendered_images = []                
                 gen = ((i, img) for i, img in enumerate(h5fi[key]))
                 for i, img in gen:
                     # frames = torch.from_numpy(img.astype(np.float32).reshape((1,50,50)))
                     # _img = l1norm(img)
-                    _img = img/np.sum(img)
-                    _img = np.clip(_img * 1e6, 0, None)
+                    _img = img - np.min(img)
+                    _img = _img/np.sum(_img)
+                    _img = (_img/np.max(_img))*(1200-100) + 60
+                    # _img = np.clip(_img * 7e5, 0, None)
+                    _img = np.clip(_img, 0, None)
+                    print(np.min(_img),"--",np.max(_img))
+                    # _img = np.clip(_img * 1e5, 0, None)
                     frames = torch.from_numpy(_img.astype(np.float32).reshape((1,50,50)))
                     emitters = infer.forward(frames)
                     print(emitters.xyz)
