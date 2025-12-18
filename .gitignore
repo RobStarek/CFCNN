@@ -36,3 +36,4 @@ star-test/compare.ipynb
 
 #decode training
 reference_decode_training/
+/decode-model/_temp_training_for_bio/*.*
