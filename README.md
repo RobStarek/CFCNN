@@ -36,6 +36,8 @@ Navigate to the `cnn-model` directory. You can run the provided example notebook
   export TF_USE_LEGACY_KERAS=1
   ```
 
+  To see how to properly normalize larger image, look at `example_larger_image.ipynb`.
+
 - **Python Script:**  
   Run the script directly:
 
@@ -43,7 +45,7 @@ Navigate to the `cnn-model` directory. You can run the provided example notebook
     python cnn-model/example_h5.py
     ```
 
-This will load the pretrained model ([model.h5](cnn-model/model.h5)), process the input data ([test_in.h5](cnn-model/test_in.h5)), and demonstrate basic usage.
+This will load the calibration-free trained model ([model.h5](cnn-model/model.h5)), process the input data ([test_in.h5](cnn-model/test_in.h5)), and demonstrate basic usage.
 
 ## 3. Data and Results
 
