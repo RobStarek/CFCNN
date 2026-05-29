@@ -40,6 +40,9 @@ reference_decode_training/
 
 Tissue_Chromatin_Alexa647.tif
 
+#if it can be easily generated, one should not store it
+rs-s-drift-test-in.npy
+
 #Huge directory with bio data
 _temp_bio/
 _temp_crb/
