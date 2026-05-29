@@ -107,3 +107,12 @@ This folder contains scripts for the recreation of Figure 3 of the paper. Synthe
 
 Here we test tolerance of CFCNN model to optical aberrations in the microscope. We parameterize the aberration using Zernike polynomials. We test the resilience against defocus, spherical aberration, coma, astigmatism, and various choices of numerical aperture.
 
+## bio
+
+This folder contains a code for reproduction of an image in which we test capability of CFCNN to process large STORM data. Note that original data are not included due to the large size. Rendering output from DECODE and ThunderSTORM has been done separately and the outputs are saved in a .npz file.
+
+## drift-correction-synth-test
+
+This folder contains a notebook and synthetic test data for validating drift detection and correction algorithms. The notebook generates synthetic drifting data with known ground truth trajectories, processes them through CFCNN, detects drift using cross-correlation methods, and evaluates the accuracy of drift correction.
+
+
