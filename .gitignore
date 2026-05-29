@@ -37,3 +37,9 @@ star-test/compare.ipynb
 #decode training
 reference_decode_training/
 /decode-model/_temp_training_for_bio/*.*
+
+Tissue_Chromatin_Alexa647.tif
+
+#Huge directory with bio data
+_temp_bio/
+_temp_crb/
