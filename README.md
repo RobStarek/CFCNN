@@ -25,6 +25,12 @@ This guide will help you set up your environment and run your first example usin
 
 - For DECODE-related scripts, use Python 3.10 and see the file `decode-model/requirements.txt` which specifies our installation. Refer to the [original DECODE documentation](https://github.com/TuragaLab/DECODE) for more information on how install DECODE.
 
+- See `cnn-model/hw-info.md` to see specifications of the computer used for training and inference.
+
+- See `cnn-model/requirements-tfenv.txt` for full package list of the python environment that we have used for inference.
+
+- We do not list full package specification for auxiliary analyzes, as the data were subsequently analyzed on multiple machines with a broad range of python environment configurations.
+
 ## 2. Running the CFCNN Example
 
 Navigate to the `cnn-model` directory. You can run the provided example notebook or script:
